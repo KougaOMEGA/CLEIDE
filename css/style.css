@@ -1,0 +1,144 @@
+body{
+
+	width: 99%;
+	margin: auto;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 2em;
+	text-align: justify;
+	color: white;
+	background-color: red; 
+
+}
+
+a {
+	color: pink;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: blue;
+	text-decoration: underline;
+	transition: 0.5s;
+	padding: 0px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+
+ul {
+	list-style-type: none;
+	padding: 20px;
+	height: 30px;
+	width: auto;
+	display: inline-block;
+}
+
+ul li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.selected {
+	color: blue;
+	text-decoration: underline;
+}
+
+.logo {
+	width: 100%;	
+}
+
+.centro {
+	
+	background-color: lightblue;
+	display: block;
+	
+}
+
+.main {
+	background-color: purple;
+	height: 100%;
+}
+
+figcaption {
+	color: black;
+	text-align: center;
+}
+
+
+.mini {
+	width: 40%;
+}
+
+
+div {
+
+	padding: 5px;
+
+}
+
+#wrapper {
+	width: 80%;
+	margin: auto;
+}
+
+.menu {
+	width: 400px;
+	margin: auto;
+	background-color: green;
+}
+
+
+
+
+
+/* ========== Criando site responsivo ========== */
+
+/* ========== MONITOR ========== */
+@media screen and (min-width: 980px){
+
+	#wrapper{
+		width: 60%;
+	}
+}
+
+/* ========== TABLET ========== */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+	#wrapper{
+		width: 80%;
+	}
+}
+
+/* ========== SMARTPHONE ========== */
+@media screen and (min-width: 0px) and (max-width: 767px){
+
+	body{
+		min-width: 422px;
+	}
+
+	#wrapper{
+		width: 99%;
+	}
+
+	.mini {
+		width: 100%;
+	}
+	/*
+	img {
+		width: 200px; /* Valor relacionado com #centro (width)
+		margin: auto;
+	}
+
+	#centro{
+		width: 200px; /* Valor relacionado com img (width)
+		margin: auto;
+	}
+	*/
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+    <style>
+		.mySlides {display:none;}
+	</style>
+	<title>Saúde & Beleza com Cleide Nascimento</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+
+</head>
+
+<body>
+	
+
+	<div id="wrapper">
+
+		<div class="menu">
+			<ul>
+				<li><a href="index.html" class="selected">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+
+		<h1>Saúde & Beleza com Cleide Nascimento</h1>
+		<h2>Contato: (13) 98142-7892</h2>
+
+		<h2>Serviços</h2>
+
+		<div class="main">
+
+			<div class="centro">
+				<div class="w3-content w3-section" style="width:98%; height: 98%">
+					<img class="mySlides mini" src="img/sobrancelhas.png">
+					<img class="mySlides mini" src="img/bambuterapia.jpg">
+					<img class="mySlides mini" src="img/cabeleireira.jpg">
+					<img class="mySlides mini" src="img/estetica.jpg">
+				</div>
+
+
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					    var i;
+					    var x = document.getElementsByClassName("mySlides");
+					    for (i = 0; i < x.length; i++) {
+					       x[i].style.display = "none";  
+					    }
+					    myIndex++;
+					    if (myIndex > x.length) {myIndex = 1}    
+					    x[myIndex-1].style.display = "block";  
+					    setTimeout(carousel, 2000); // Change image every 3 seconds
+					}
+				</script>
+			</div>
+
+
+			<div class="centro">
+				<figure>
+					<img src="img/sobrancelhas.png" alt="Cleide Logo" title="Logo" class="mini">
+					<figcaption>Designer de Sobrancelhas</figcaption>
+				</figure>
+			</div>
+
+			<div class="centro">
+				<figure>
+					<img src="img/bambuterapia.jpg" alt="Cleide Logo" title="Logo" class="mini">
+					<figcaption>Bambuterapeuta</figcaption>
+				</figure>
+			</div>
+
+			<div class="centro">
+				<figure>
+					<img src="img/cabeleireira.jpg" alt="Cleide Logo" title="Logo" class="mini">
+					<figcaption>Cabeleireira</figcaption>
+				</figure>
+			</div>
+
+			<div class="centro">
+				<figure>
+					<img src="img/estetica.jpg" alt="Cleide Logo" title="Logo" class="mini">
+					<figcaption>Esteticista</figcaption>
+				</figure>
+
+			</div>
+
+		</div>
+
+
+	</div>
+	
+
+</body>
+
+</html>
